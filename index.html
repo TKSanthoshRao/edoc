@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eDoc - Online Doctor Consultation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <span class="toggle-text">Dark Mode</span>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>eDoc</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Our Doctors</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Virtual Healthcare for You</h1>
+                <p>Consult top doctors online for any health concern</p>
+                <div class="hero-buttons">
+                    <button class="btn primary-btn">Book Appointment</button>
+                    <button class="btn secondary-btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Online Consultation</h3>
+                    <p>Connect with experienced doctors via video call</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-pills"></i>
+                    <h3>Prescription</h3>
+                    <p>Get digital prescriptions delivered to your email</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-medical"></i>
+                    <h3>Medical Records</h3>
+                    <p>Access your medical history anytime, anywhere</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency medical assistance</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="doctors" class="doctors">
+            <h2 class="section-title">Our Doctors</h2>
+            <div class="doctors-container">
+                <!-- Doctor cards will be dynamically inserted here -->
+            </div>
+            <div class="view-more">
+                <button class="btn primary-btn">View All Doctors</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-title">About eDoc</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>eDoc is a leading telemedicine platform connecting patients with qualified healthcare professionals through secure video consultations. Our mission is to make healthcare accessible to everyone, everywhere.</p>
+                    <p>Founded in 2023, we have helped thousands of patients receive quality healthcare from the comfort of their homes. Our network includes experienced doctors from various specialties available for consultations seven days a week.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>5000+</h3>
+                        <p>Consultations</p>
+                    </div>
+                    <div class="stat">
+                        <h3>200+</h3>
+                        <p>Doctors</p>
+                    </div>
+                    <div class="stat">
+                        <h3>98%</h3>
+                        <p>Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Healthcare Avenue, Bengaluru, India</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> contact@edoc.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>eDoc</h2>
+                <p>Your Health, Our Priority</p>
+        <div class="footer-bottom">
+            <p>&copy; 2025 eDoc - All Rights Reserved</p>
+        </div>
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>
