@@ -1,8 +1,10 @@
-# Step 1: Use an official Nginx image as a base image
+# Use lightweight Nginx image
 FROM nginx:alpine
 
-# Step 2: Copy your app files into the container (assumes your files are in the current directory)
+# Remove default static site
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy your HTML/CSS/JS into the web root
 COPY . /usr/share/nginx/html
 
-# Step 3: Expose the default port (80) to access the app
 EXPOSE 80
